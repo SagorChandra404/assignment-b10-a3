@@ -47,11 +47,11 @@
       };
     </script>
   </head>
-  <body class="font-manrope">
+  <body class="font-manrope px-5 lg:px-0">
     <!-- header section -->
     <header>
       <!-- navbar section st -->
-      <nav class="container mx-auto py-8">
+      <nav class="container mx-auto py-4 px-4 md:px-8  md:py-8">
         <div class="navbar bg-base-100">
           <div class="navbar-start">
             <a class="flex items-center gap-2"
@@ -91,7 +91,7 @@
             </ul>
           </div>
           <div class="navbar-end">
-            <div class="flex items-center gap-4">
+            <div class=" hidden md:flex items-center gap-4  ">
               <!-- icons -->
               <div class="flex items-center gap-4">
                 <a href="#">
@@ -105,11 +105,11 @@
                   ></i
                 ></a>
               </div>
-              <!-- book consult -->
+              <!-- book consult --> 
               <div class="">
                 <a
-                  class="bg-primary_btnColor rounded-full flex items-center justify-center px-5 py-3 gap-2"
-                  ><span class="text-xl font-bold">Book Consult</span
+                  class="bg-primary_btnColor rounded-full flex items-center justify-center px-2 py-2  lg:px-3 lg:py-3 gap-2"
+                  ><span class="text-lg lg:text-xl font-bold">Book Consult</span
                   ><i
                     class="fa-solid fa-arrow-right-long text-white bg-bg_footer w-4 h-4 rounded-full p-3 flex items-center justify-center -rotate-45"
                   ></i
@@ -160,13 +160,13 @@
       </nav>
 
       <!-- banner section -->
-      <section class="container mx-auto">
-        <div class="flex items-center justify-center mb-7">
+      <section class="container mx-auto px-5 md:px-0">
+        <div class="max-w-[261px] md:max-w-[571px] mx-auto mb-7">
           <img src="./images/banner.png" alt="" />
         </div>
 
         <div class="flex items-center justify-center flex-col space-y-7">
-          <h1 class="text-center text-6xl text-title font-extrabold">
+          <h1 class=" text-center text-3xl  md:text-4xl lg:text-6xl text-title font-extrabold">
             A barn house of this design has a <br />striking appearance
           </h1>
           <p class="text-center">
@@ -174,8 +174,9 @@
             sophistication, featuring weathered wood, sleek metal <br />accents,
             and large windows that flood the space with natural light.
           </p>
+          <!-- btn st -->
           <button
-            class="bg-secondary_btnColor flex items-center px-6 py-3 gap-2 rounded-full"
+            class="bg-secondary_btnColor flex items-center justify-center px-6 py-3 gap-2 rounded-full w-full md:w-fit "
           >
             <span class="text-xl font-bold text-title">View Details</span
             ><i
@@ -186,19 +187,20 @@
       </section>
     </header>
     <!-- main section -->
-    <main class="bg-[#F4F4F4] mt-24">
+    <main class="bg-[#F4F4F4] mt-24 ">
       <!-- about us -->
-      <section class="container mx-auto relative">
-        <div class="absolute top-8 -left-12">
+      <section class="container mx-auto relative px-5 md:px-0">
+        <div class="absolute top-8 -left-12 hidden lg:block">
           <img src="./images/Vector.png" alt="" />
         </div>
         <!-- about container -->
 
-        <div class="pt-24 flex justify-between">
+        <div class="pt-24 flex flex-col lg:flex-row justify-between">
           <!-- about text container -->
           <div class="">
-            <div class="space-y-6">
-              <button
+            <div class="space-y-6 text-center lg:text-left">
+              <div class="flex items-center justify-center lg:justify-start">
+                <button
                 class="bg-white px-4 py-2 rounded-full flex items-center gap-2"
               >
                 <i class="fa-solid fa-arrow-right-long"></i
@@ -206,7 +208,8 @@
                   >About Us</a
                 >
               </button>
-              <h2 class="text-5xl font-bold text-title">
+              </div>
+              <h2 class="text-2xl md:text-5xl font-bold text-title">
                 We design thoughtful, <br />liveable spaces
               </h2>
               <p class="text-base font-medium text-primary">
@@ -259,7 +262,7 @@
       </section>
 
       <!-- Works Process section -->
-      <section class="container mx-auto py-24">
+      <section class="container mx-auto py-24 px-5 md:px-0">
         <!--works process btn -->
         <div class="flex justify-center items-center mb-6">
           <button
@@ -272,14 +275,14 @@
 
         <!-- works title -->
         <div class="text-center space-y-6">
-          <h2 class="text-5xl font-bold text-title">Our Works Process</h2>
+          <h2 class="text-2xl md:text-5xl font-bold text-title">Our Works Process</h2>
           <p class="text-base font-normal text-primary">
             The barn house captivates with its blend of rustic charm and modern
             sophistication, <br />featuring weathered wood, sleek metal accents.
           </p>
         </div>
         <!-- works card section -->
-        <div class="grid grid-cols-4 gap-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
           <!-- card 1 -->
           <div class="mt-8 bg-[#E7C1D3] rounded-xl p-6 space-y-3">
             <img src="./images/concept.png" alt="" />
@@ -340,7 +343,7 @@
 
           <!-- portfolio title -->
           <div class="text-center space-y-6">
-            <h2 class="text-5xl font-bold text-title">Our Latest Portfolio</h2>
+            <h2 class="text-2xl md:text-5xl font-bold text-title">Our Latest Portfolio</h2>
             <p class="text-base font-normal text-primary">
               The barn house captivates with its blend of rustic charm and
               modern sophistication, <br />featuring weathered wood, sleek metal
@@ -351,11 +354,11 @@
           <!-- portffolio card -->
           <div class="mt-8 space-y-10">
             <!-- card part 1 -->
-            <div class="grid grid-cols-4 gap-10">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-10">
               <div
-                class="col-span-3 border-gray-300 border-[1px] rounded-lg flex p-6 gap-10"
+                class="col-span-1 lg:col-span-3 border-gray-300 border-[1px] rounded-lg flex flex-col lg:flex-row   p-6 gap-10"
               >
-                <div class="w-[270px]">
+                <div class="w-full lg:w-[270px]">
                   <img
                     class="w-full h-full rounded-lg"
                     src="./images/img1.png"
@@ -393,7 +396,7 @@
               </div>
             </div>
             <!-- card part 2 -->
-            <div class="grid grid-cols-4 gap-10">
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-10">
               <div
                 class="border-gray-300 border-[1px] rounded-lg col-span-1 p-6"
               >
@@ -402,7 +405,7 @@
                 </div>
               </div>
               <div
-                class="border-gray-300 border-[1px] rounded-lg col-span-2 p-6 flex items-center gap-6"
+                class="border-gray-300 border-[1px] rounded-lg col-span-1 lg:col-span-2 p-6 flex flex-col lg:flex-row items-center gap-6"
               >
                 <div class="w-full h-full">
                   <img class="w-full h-full" src="./images/img4.png" alt="" />
@@ -441,7 +444,7 @@
 
       <!-- form part -->
       <section class="bg-bgContact bg-no-repeat bg-center bg-cover">
-        <div class="w-8/12 mx-auto py-24">
+        <div class="md:w-8/12 mx-auto py-24 px-5 md:px-0">
           <!-- from btn -->
           <div class="flex justify-center items-center mb-6">
             <button
@@ -455,7 +458,7 @@
           </div>
           <!-- from title -->
           <div class="text-center space-y-6">
-            <h2 class="text-5xl font-bold text-title">
+            <h2 class="text-2xl md:text-5xl font-bold text-title">
               Let’s Discuss Next Project
             </h2>
             <p class="text-base font-normal text-primary">
@@ -465,47 +468,46 @@
             </p>
           </div>
           <!-- from container -->
-          <div class="grid grid-cols-2 gap-6 mt-8">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
             <div class="col-span-1">
               <input
                 type="text"
-                class="w-full p-5 rounded-2xl text-base font-medium text-[#A0A0A0]"
+                
                 placeholder="First Name*"
-                class="input input-bordered w-full max-w-xs"
+                class="input input-bordered w-full  p-5 rounded-2xl text-base font-medium text-[#A0A0A0]"
               />
             </div>
             <div class="col-span-1">
               <input
                 type="text"
-                class="w-full p-5 rounded-2xl text-base font-medium text-[#A0A0A0]"
+                
                 placeholder="Last Name*"
-                class="input input-bordered w-full max-w-xs"
+                class="input input-bordered w-full  p-5 rounded-2xl text-base font-medium text-[#A0A0A0]"
               />
             </div>
             <div class="col-span-1">
               <input
                 type="text"
-                class="w-full p-5 rounded-2xl text-base font-medium text-[#A0A0A0]"
+                
                 placeholder="Phone Number*"
-                class="input input-bordered w-full max-w-xs"
+                class="input input-bordered w-full   p-5 rounded-2xl text-base font-medium text-[#A0A0A0]"
               />
             </div>
             <div class="col-span-1">
               <input
                 type="text"
-                class="w-full p-5 rounded-2xl text-base font-medium text-[#A0A0A0]"
                 placeholder="Email Adress*"
-                class="input input-bordered w-full max-w-xs"
+                class="input input-bordered w-full   p-5 rounded-2xl text-base font-medium text-[#A0A0A0]"
               />
             </div>
-            <div class="col-span-2">
+            <div class="col-span-1 md:col-span-2">
               <textarea
                 class="textarea textarea-bordered w-full h-60 rounded-2xl text-base font-medium text-[#A0A0A0]"
                 placeholder="Write your message here"
               ></textarea>
             </div>
 
-            <div class="col-span-2">
+            <div class="col-span-1  md:col-span-2">
               <button
                 class="w-full bg-primary_btnColor py-3 px-5 rounded-2xl text-base font-medium text-[#A0A0A0] flex items-center justify-center gap-3"
               >
@@ -523,7 +525,7 @@
     </main>
     <!-- footer section -->
     <footer class="bg-bg_footer">
-      <div class="container mx-auto py-24">
+      <div class="container mx-auto py-24 px-5 md:px-0">
         <!-- footer logo -->
         <div class="flex items-center justify-center">
           <!-- footer logo -->
@@ -542,8 +544,8 @@
           </p>
         </div>
         <!-- footer menu -->
-        <div class="navbar-center flex justify-center py-12">
-          <ul class="menu menu-horizontal px-2 gap-16">
+        <div class="navbar-center flex  justify-center py-12 ">
+          <ul class="menu menu-horizontal px-2 gap-6 md:gap-16 flex-col md:flex-row items-center">
             <li
               class="text-base font-normal text-secondary hover:text-primary transition-colors duration-300 ease-in-out"
             >
